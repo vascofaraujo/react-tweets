@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Person from "./fetchRandomUser";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+
+  const [users] = useState([
+    {name: "devEd", message: "Hello World", likes: "3"},
+    {name: "Cristiano Ronaldo", message: "HODL", likes: "76k"},
+    {name: "ASDF", message: "dd", likes: "1"}
+  ]);
+
+  return(
+    <div className="app">
+      <div>
+        <h1>Very important Tweets</h1>
+      </div>
+      <div>
+        <Person  />
+        <Person />
+        <Person />
+      </div>
     </div>
   );
 }

@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.app{
+  min-height: 100vh;
+  background: lightgreen;
+  display: flex;
+  flex: 1;
+  flex-direction:column;
+
+  padding: 30px;
+  align-items: center;
+  border: 30px;
+}
+
+.app h1{
+  height: 50px;
+  color: blue;
+  text-align: center;
+}
+
+.tweet{
+  border: 2px solid rgb(0, 0, 0);
+  height: 300px;
+  width: 300px;
+  background: rgb(30, 170, 37);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.tweet img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
